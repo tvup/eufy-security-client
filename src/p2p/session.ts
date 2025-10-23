@@ -494,7 +494,7 @@ export class P2PClientProtocol extends TypedEmitter<P2PClientProtocolEvents> {
         this._clearLookupTimeout();
         this.lookupTimeout = setTimeout(() => {
             this.lookupTimeout = undefined;
-            rootP2PLogger.error(`All address lookup tentatives failed.`, { stationSN: this.rawStation.station_sn });
+            rootP2PLogger.debug(`All address lookup tentatives failed.`, { stationSN: this.rawStation.station_sn });
             if (this.localIPAddress !== undefined)
                 this.localIPAddress = undefined
             this._disconnected();
