@@ -1,5 +1,5 @@
 {
-  "name": "eufy-security-client",
+  "name": "tvup-eufy-security-client",
   "version": "3.2.0",
   "description": "Client to comunicate with Eufy-Security devices",
   "author": {
