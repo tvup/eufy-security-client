@@ -795,7 +795,7 @@ export class Device extends TypedEmitter<DeviceEvents> {
                 return value !== undefined ? value : (stringProperty.default !== undefined ? stringProperty.default : "");
             } else if (property.type === "object") {
                 const objectProperty = property as PropertyMetadataObject;
-                return value !== undefined ? value : (objectProperty.default !== undefined ? objectProperty.default : undefined);
+                return value !== undefined ? value : (objectProperty.default !== undefined ? objectProperty.default : "" as PropertyValue);
             }
         } catch (err) {
             const error = ensureError(err);
