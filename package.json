@@ -1,6 +1,6 @@
 {
   "name": "eufy-security-client",
-  "version": "3.2.0",
+  "version": "3.5.0",
   "description": "Client to communicate with Eufy-Security devices",
   "author": {
     "name": "bropat",
@@ -9,15 +9,15 @@
   "homepage": "https://github.com/bropat/eufy-security-client",
   "main": "build/index.js",
   "files": [
-      "src",
-      "tsconfig.build.json",
-      "tsconfig.json",
-      "*.proto",
-      "*.crt",
-      "build/**/*.js",
-      "build/**/*.d.ts",
-      "build/**/*.js.map",
-      "build/**/*.d.ts.map"
+    "src",
+    "tsconfig.build.json",
+    "tsconfig.json",
+    "*.proto",
+    "*.crt",
+    "build/**/*.js",
+    "build/**/*.d.ts",
+    "build/**/*.js.map",
+    "build/**/*.d.ts.map"
   ],
   "scripts": {
     "build:ts": "tsc -p tsconfig.build.json && npm run copy-proto-build",
