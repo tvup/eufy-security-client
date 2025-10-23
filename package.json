@@ -17,7 +17,7 @@
       "build/**/*.js",
       "build/**/*.d.ts",
       "build/**/*.js.map",
-      "build/**/*.d.ts.map",
+      "build/**/*.d.ts.map"
   ],
   "scripts": {
     "build:ts": "tsc -p tsconfig.build.json && npm run copy-proto-build",
