@@ -922,7 +922,7 @@ class Station extends tiny_typed_emitter_1.TypedEmitter {
             this.scheduleReconnect();
     }
     onTimeout() {
-        logging_1.rootHTTPLogger.debug(`Timeout connecting to station ${this.getSerial()}`);
+        logging_1.rootHTTPLogger.info(`Timeout connecting to station ${this.getSerial()}`);
         this.emit("connection error", this, new error_1.StationConnectTimeoutError("Timeout connecting to station", { context: { station: this.getSerial() } }));
         this.scheduleReconnect();
     }
