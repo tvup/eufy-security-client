@@ -988,7 +988,7 @@ export class Station extends TypedEmitter<StationEvents> {
     }
 
     private onTimeout(): void {
-        rootHTTPLogger.debug(`Timeout connecting to station ${this.getSerial()}`);
+        rootHTTPLogger.info(`Timeout connecting to station ${this.getSerial()}`);
         this.emit("connection error", this, new StationConnectTimeoutError("Timeout connecting to station", { context: { station: this.getSerial() } }));
         this.scheduleReconnect();
     }
