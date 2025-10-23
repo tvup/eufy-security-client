@@ -261,7 +261,7 @@ export const buildCommandHeader = (seqNumber: number, commandType: CommandType, 
         Buffer.compare(p2pDataTypeHeader, P2PDataTypeHeader.BINARY) === 0 ||
         Buffer.compare(p2pDataTypeHeader, P2PDataTypeHeader.CONTROL) === 0 ||
         Buffer.compare(p2pDataTypeHeader, P2PDataTypeHeader.VIDEO) === 0)) {
-        dataTypeBuffer = Buffer.from(p2pDataTypeHeader);
+        dataTypeBuffer = p2pDataTypeHeader;
     }
     const seqAsBuffer = Buffer.allocUnsafe(2);
     seqAsBuffer.writeUInt16BE(seqNumber, 0);
